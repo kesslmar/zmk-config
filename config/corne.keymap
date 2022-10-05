@@ -33,7 +33,7 @@
 //                   |     |     |     |               |     |     |  0  |
                         bindings = <
    &trans  &trans  &kp HOME  &kp UP     &kp END    &kp PG_UP       &trans  &kp N7  &kp N8  &kp N9  &kp AMPS  &kp HASH
-   &trans  &trans  &kp LEFT  &kp DOWN   &kp RIGHT  &bt PG_DN       &trans  &kp N4  &kp N5  &kp N6  &kp EXCL  &kp RPAR
+   &trans  &trans  &kp LEFT  &kp DOWN   &kp RIGHT  &kp PG_DN       &trans  &kp N4  &kp N5  &kp N6  &kp EXCL  &kp RPAR
    &trans  &trans  &trans    &trans     &trans     &trans          &trans  &kp N1  &kp N2  &kp N3  &kp FSLH  &trans
                              &trans     &trans     &trans          &trans  &trans  &kp N0
                         >;
@@ -41,15 +41,15 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |     |  !  |  @  |  #  |  $  |  %  |               |  -' |  *( |  () |  &  |  )  | DEL |
-// |     |     |     |     |     |     |               |  @" |  =  |  [  |  ]  |  \  |  `  |
+// |     |  !  |  @  |  #  |  %  |  ^& |               |  -' |  *( |  () |  &  |  )  | DEL |
+// |     |     |     |     |  `§ |     |               |  @" |  =  |  [  |  ]  |  \  |  `  |
 // |     |     |     |     |     |     |               |  =^ |  +  |  {  |  }  | "|" |  ~  |
-//                   |     |     | SPC |               | ENT |     |     |
+//                   |     |     |     |               |     |     |     |
                         bindings = <
-   &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT        &kp MINUS  &kp STAR   &kp LPAR  &kp AMPS  &kp RPAR  &kp DEL
-   &trans  &trans    &trans  &trans    &trans    &trans           &kp AT     &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-   &trans  &trans    &trans  &trans    &trans    &trans           &kp EQUAL  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                    	     &trans    &trans    &kp SPACE        &kp RET    &trans     &trans
+   &trans  &kp EXCL  &kp AT  &kp RA(N3)  &kp PRCNT  &kp CARET        &kp MINUS  &kp STAR   &kp LPAR  &kp AMPS  &kp RPAR  &kp DEL
+   &trans  &trans    &trans  &trans    &kp GRAVE  &trans           &kp AT     &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
+   &trans  &trans    &trans  &trans    &trans     &trans           &kp EQUAL  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
+                    	     &trans    &trans     &trans           &trans     &trans     &trans
                         >;
                 };
         };
