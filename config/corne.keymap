@@ -14,10 +14,10 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  [ü  |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;ö |  'ä  |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
-//                    | LOW | ALT | ENT |   | SPC | BSPC | RSE |
+// | TAB |  Q  |  W  |  E  |  R  |  T  |               |  Y  |  U  |  I  |  O  |  P  |  [ü |
+// | CTR |  A  |  S  |  D  |  F  |  G  |               |  H  |  J  |  K  |  L  |  ;ö |  'ä |
+// | SHT |  Z  |  X  |  C  |  V  |  B  |               |  N  |  M  |  ,  |  .  |  /  | SHT |
+//                   | LOW | ALT | ENT |               | SPC | BSP | RSE |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp LBKT
    &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
@@ -27,28 +27,28 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  &/ |  #*  |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT |  4  |  5  |  6  |  !+ |  )=  |
-// | SHFT |     |     |     |     |     |   |     |  1  |  2  |  3  |  ?- |      |
-//                    |     |     | SPC |   | ENT |     |  0  |
+// |     |  1  | HME | UP  | END | PGU |               |     |  7  |  8  |  9  |  &/ |  #* |
+// |     | BT1 | LFT | DWN | RGT | PGD |               |     |  4  |  5  |  6  |  !+ |  )= |
+// |     |     |     |     |     |     |               |     |  1  |  2  |  3  |  /- |     |
+//                   |     |     |     |               |     |     |  0  |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6    &kp N7  &kp N8  &kp N9  &kp AMPS   &kp HASH
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT  &kp N4  &kp N5  &kp N6  &kp EXCL   &kp RPAR
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans    &kp N1  &kp N2  &kp N3  &kp QMARK  &trans
-                          	        &trans       &trans       &kp SPACE      &kp RET   &trans  &kp N0
+   &trans  &kp N1        &kp HOME  &kp UP     &kp END    &kp PG_UP       &trans  &kp N7  &kp N8  &kp N9  &kp AMPS   &kp HASH
+   &trans  &bt BT_SEL 0  &kp LEFT  &kp DOWN   &kp RIGHT  &bt PG_DN       &trans  &kp N4  &kp N5  &kp N6  &kp EXCL   &kp RPAR
+   &trans  &trans        &trans    &trans     &trans     &trans          &trans  &kp N1  &kp N2  &kp N3  &kp FSLH  &trans
+                                   &trans     &trans     &trans          &trans  &trans  &kp N0
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC |  !  |  @  |  #  |  $  |  %  |   |  -' |  *( |  () |  &  |  )  | DEL  |
-// | CTRL |     |     |     |     |     |   |  @" |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  =^ |  +  |  {  |  }  | "|" |  ~   |
-//                    |     |     | SPC |   | ENT |     |     |
+// |     |  !  |  @  |  #  |  $  |  %  |             |  -' |  *( |  () |  &  |  )  | DEL |
+// |     |     |     |     |     |     |             |  @" |  =  |  [  |  ]  |  \  |  `  |
+// |     |     |     |     |     |     |             |  =^ |  +  |  {  |  }  | "|" |  ~  |
+//                    |     |     | SPC |             | ENT |     |     |
                         bindings = <
-   &kp  ESC  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp MINUS &kp STAR  &kp LPAR   &kp AMPS &kp RPAR &kp DEL
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp AT    &kp EQUAL &kp LBKT   &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp EQUAL &kp PLUS  &kp LBRC   &kp RBRC &kp PIPE &kp TILDE
+   &trans  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp MINUS &kp STAR  &kp LPAR   &kp AMPS &kp RPAR &kp DEL
+   &trans  &trans   &trans &trans   &trans   &trans      &kp AT    &kp EQUAL &kp LBKT   &kp RBKT &kp BSLH &kp GRAVE
+   &trans  &trans   &trans &trans   &trans   &trans      &kp EQUAL &kp PLUS  &kp LBRC   &kp RBRC &kp PIPE &kp TILDE
                     	     &trans  &trans    &kp SPACE   &kp RET   &trans    &trans
                         >;
                 };
