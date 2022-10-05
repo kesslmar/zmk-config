@@ -27,24 +27,24 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |     |  1  | HME | UP  | END | PGU |               |     |  7  |  8  |  9  |  &/ |  #* |
-// |     | BT1 | LFT | DWN | RGT | PGD |               |     |  4  |  5  |  6  |  !+ |  )= |
+// |     |     | HME | UP  | END | PGU |               |     |  7  |  8  |  9  |  &/ |  #* |
+// |     |     | LFT | DWN | RGT | PGD |               |     |  4  |  5  |  6  |  !+ |  )= |
 // |     |     |     |     |     |     |               |     |  1  |  2  |  3  |  /- |     |
 //                   |     |     |     |               |     |     |  0  |
                         bindings = <
-   &trans  &kp N1        &kp HOME  &kp UP     &kp END    &kp PG_UP       &trans  &kp N7  &kp N8  &kp N9  &kp AMPS   &kp HASH
-   &trans  &bt BT_SEL 0  &kp LEFT  &kp DOWN   &kp RIGHT  &bt PG_DN       &trans  &kp N4  &kp N5  &kp N6  &kp EXCL   &kp RPAR
-   &trans  &trans        &trans    &trans     &trans     &trans          &trans  &kp N1  &kp N2  &kp N3  &kp FSLH  &trans
-                                   &trans     &trans     &trans          &trans  &trans  &kp N0
+   &trans  &trans  &kp HOME  &kp UP     &kp END    &kp PG_UP       &trans  &kp N7  &kp N8  &kp N9  &kp AMPS  &kp HASH
+   &trans  &trans  &kp LEFT  &kp DOWN   &kp RIGHT  &bt PG_DN       &trans  &kp N4  &kp N5  &kp N6  &kp EXCL  &kp RPAR
+   &trans  &trans  &trans    &trans     &trans     &trans          &trans  &kp N1  &kp N2  &kp N3  &kp FSLH  &trans
+                             &trans     &trans     &trans          &trans  &trans  &kp N0
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |     |  !  |  @  |  #  |  $  |  %  |             |  -' |  *( |  () |  &  |  )  | DEL |
-// |     |     |     |     |     |     |             |  @" |  =  |  [  |  ]  |  \  |  `  |
-// |     |     |     |     |     |     |             |  =^ |  +  |  {  |  }  | "|" |  ~  |
-//                   |     |     | SPC |             | ENT |     |     |
+// |     |  !  |  @  |  #  |  $  |  %  |               |  -' |  *( |  () |  &  |  )  | DEL |
+// |     |     |     |     |     |     |               |  @" |  =  |  [  |  ]  |  \  |  `  |
+// |     |     |     |     |     |     |               |  =^ |  +  |  {  |  }  | "|" |  ~  |
+//                   |     |     | SPC |               | ENT |     |     |
                         bindings = <
    &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT        &kp MINUS  &kp STAR   &kp LPAR  &kp AMPS  &kp RPAR  &kp DEL
    &trans  &trans    &trans  &trans    &trans    &trans           &kp AT     &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
