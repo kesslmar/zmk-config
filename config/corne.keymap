@@ -41,14 +41,14 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |     |  ¦  |  @  |  #  |  %  |  ^& |               |  -' |  *( |  () |  &  |  )  | DEL |
-// |     |  _? |     |     |  `§ |     |               |  @" |  =  |  [  |  ]  |  \  |  `  |
-// |     |     |     |     |     |     |               |  =^ |  +  |  {  |  }  | "|" |  ~  |
+// |     |  ¦  |  @  |  #  |  %  |  ^& |               |  -' |  *( |  () |     |  \  | DEL |
+// |     |  _? |     |     |  `§ |     |               |  @" |  [  |  ]  |     |  +! |  \$ |
+// |     |     |     |     |     |     |               |  =^ |  +  |  {  |     |  ~  |     |
 //                   |     |     |     |               |     |     |     |
                         bindings = <
-   &trans  &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp PRCNT  &kp CARET        &kp MINUS  &kp STAR      &kp LPAR      &kp AMPS  &kp RPAR  &kp DEL
-   &trans  &kp UNDER   &trans      &trans      &kp GRAVE  &trans           &kp AT     &kp RA(RBKT)  &kp RA(LBKT)  &kp RBKT  &kp BSLH  &kp GRAVE
-   &trans  &trans      &trans      &trans      &trans     &trans           &kp EQUAL  &kp RA(SQT)   &kp RA(BSLH)  &kp RBRC  &kp PIPE  &kp TILDE
+   &trans  &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp PRCNT  &kp CARET        &kp MINUS  &kp STAR      &kp LPAR      &kp AMPS  &kp RA(Z)      &kp DEL
+   &trans  &kp UNDER   &trans      &trans      &kp GRAVE  &trans           &kp AT     &kp RA(LBKT)  &kp RA(RBKT)  &kp RBKT  &kp PLUS       &kp BSLH
+   &trans  &trans      &trans      &trans      &trans     &trans           &kp EQUAL  &kp RA(SQT)   &kp RA(BSLH)  &kp RBRC  &kp RA(EQUAL)  &trans
                       	           &trans      &trans     &trans           &trans     &trans        &trans
                         >;
                 };
