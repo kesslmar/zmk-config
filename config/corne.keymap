@@ -41,15 +41,15 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |     |  !  |  @  |  #  |  %  |  ^& |               |  -' |  *( |  () |  &  |  )  | DEL |
-// |     |     |     |     |  `§ |     |               |  @" |  =  |  [  |  ]  |  \  |  `  |
+// |     |  ¦  |  @  |  #  |  %  |  ^& |               |  -' |  *( |  () |  &  |  )  | DEL |
+// |     |  _? |     |     |  `§ |     |               |  @" |  =  |  [  |  ]  |  \  |  `  |
 // |     |     |     |     |     |     |               |  =^ |  +  |  {  |  }  | "|" |  ~  |
 //                   |     |     |     |               |     |     |     |
                         bindings = <
-   &trans  &kp EXCL  &kp AT  &kp RA(N3)  &kp PRCNT  &kp CARET        &kp MINUS  &kp STAR   &kp LPAR  &kp AMPS  &kp RPAR  &kp DEL
-   &trans  &trans    &trans  &trans    &kp GRAVE  &trans           &kp AT     &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-   &trans  &trans    &trans  &trans    &trans     &trans           &kp EQUAL  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                    	     &trans    &trans     &trans           &trans     &trans     &trans
+   &trans  &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp PRCNT  &kp CARET        &kp MINUS  &kp STAR      &kp LPAR      &kp AMPS  &kp RPAR  &kp DEL
+   &trans  &kp UNDER   &trans      &trans      &kp GRAVE  &trans           &kp AT     &kp RA(RBKT)  &kp RA(LBKT)  &kp RBKT  &kp BSLH  &kp GRAVE
+   &trans  &trans      &trans      &trans      &trans     &trans           &kp EQUAL  &kp RA(SQT)   &kp RA(BSLH)  &kp RBRC  &kp PIPE  &kp TILDE
+                      	           &trans      &trans     &trans           &trans     &trans        &trans
                         >;
                 };
         };
