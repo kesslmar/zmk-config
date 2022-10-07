@@ -48,7 +48,7 @@
                         bindings = <
    &trans  &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &kp PRCNT  &kp CARET        &kp MINUS  &kp STAR      &kp LPAR      &trans  &kp RA(Z)      &kp DEL
    &trans  &kp UNDER   &trans      &trans      &kp GRAVE  &trans           &kp AT     &kp RA(LBKT)  &kp RA(RBKT)  &trans  &kp RBRC       &kp BSLH
-   &trans  &kp NON_US_BACKSLASH      &kp GT      &trans      &trans     &trans           &kp EQUAL  &kp RA(SQT)   &kp RA(BSLH)  &trans  &kp RA(EQUAL)  &trans
+   &trans  &kp NON_US_BACKSLASH      &kp NON_US_HASH      &trans      &trans     &trans           &kp EQUAL  &kp RA(SQT)   &kp RA(BSLH)  &trans  &kp RA(EQUAL)  &trans
                       	           &trans      &trans     &trans           &trans     &trans        &trans
                         >;
                 };
