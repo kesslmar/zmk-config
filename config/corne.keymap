@@ -10,7 +10,7 @@
 
 // setting longer time for mod-tap to trigger
 &mt {
-    tapping-term-ms = <400>;
+    tapping-term-ms = <500>;
 };
          
 / {
