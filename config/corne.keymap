@@ -16,7 +16,7 @@
 // -----------------------------------------------------------------------------------------
 // | TAB |  Q  |  W  |  E  |  R  |  T  |               |  Y  |  U  |  I  |  O  |  P  |  ü  |
 // | CTR |  A  |  S  |  D  |  F  |  G  |               |  H  |  J  |  K  |  L  |  ö  |  ä  |
-// | SHT |  Z  |  X  |  C  |  V  |  B  |               |  N  |  M  |  ,  |  .  |  /  | SHT |
+// | SHT |  Z  |  X  |  C  |  V  |  B  |               |  N  |  M  |  ,  |  .  |  -  | SHT |
 //                   | LOW | ALT | ENT |               | SPC | BSP | RSE |
                         bindings = <
    &kp TAB    &kp Q  &kp W  &kp E  &kp R    &kp T           &kp Y          &kp U    &kp I      &kp O    &kp P     &kp LBKT
@@ -29,13 +29,13 @@
 // -----------------------------------------------------------------------------------------
 // |     |     | HME | UP  | END | PGU |               |     |  7  |  8  |  9  |  /  |  *  |
 // |     |     | LFT | DWN | RGT | PGD |               |     |  4  |  5  |  6  |  +  |  =  |
-// |     |     |     |     |     |     |               |     |  1  |  2  |  3  |  -  |     |
+// | BTC |     |     |     |     |     |               |     |  1  |  2  |  3  |  -  |     |
 //                   |     |     |     |               |     |     |  0  |
                         bindings = <
-   &trans  &trans  &kp HOME  &kp UP     &kp END    &kp PG_UP       &trans  &kp N7  &kp N8  &kp N9  &kp AMPS  &kp HASH
-   &trans  &trans  &kp LEFT  &kp DOWN   &kp RIGHT  &kp PG_DN       &trans  &kp N4  &kp N5  &kp N6  &kp EXCL  &kp RPAR
-   &trans  &trans  &trans    &trans     &trans     &trans          &trans  &kp N1  &kp N2  &kp N3  &kp FSLH  &trans
-                             &trans     &trans     &trans          &trans  &trans  &kp N0
+   &trans      &trans  &kp HOME  &kp UP     &kp END    &kp PG_UP       &trans  &kp N7  &kp N8  &kp N9  &kp AMPS  &kp HASH
+   &trans      &trans  &kp LEFT  &kp DOWN   &kp RIGHT  &kp PG_DN       &trans  &kp N4  &kp N5  &kp N6  &kp EXCL  &kp RPAR
+   &bt BT_CLR  &trans  &trans    &trans     &trans     &trans          &trans  &kp N1  &kp N2  &kp N3  &kp FSLH  &trans
+                                 &trans     &trans     &trans          &trans  &trans  &kp N0
                         >;
                 };
 
@@ -46,9 +46,9 @@
 // |     |  <  |  >  |  ´  |  `  |     |               |  ^  |  {  |  }  |     |  ~  |     |
 //                   |     |     |     |               |     |     |     |
                         bindings = <
-   &kp ESC  &kp RA(N7)       &kp RA(N2)           &kp RA(N3)     &kp PRCNT      &kp CARET           &kp MINUS  &kp STAR      &kp LPAR      &trans     &kp RA(Z)      &kp DEL
-   &trans   &trans           &trans               &trans         &kp GRAVE      &trans              &kp AT     &kp RA(LBKT)  &kp RA(RBKT)  &kp UNDER  &kp RBRC       &kp BSLH
-   &trans   &kp NON_US_BSLH  &kp RS(NON_US_BSLH)  &kp RA(MINUS)  &kp RS(EQUAL)  &trans              &kp EQUAL  &kp RA(SQT)   &kp RA(BSLH)  &trans     &kp RA(EQUAL)  &trans
+   &kp ESC  &kp RA(N7)       &kp RA(N2)           &kp RA(N3)     &kp PRCNT      &kp CARET           &kp MINUS  &kp STAR      &kp LPAR      &trans     &kp RA(NON_US_BSLH)  &kp DEL
+   &trans   &trans           &trans               &trans         &kp GRAVE      &trans              &kp AT     &kp RA(LBKT)  &kp RA(RBKT)  &kp UNDER  &kp RBRC             &kp BSLH
+   &trans   &kp NON_US_BSLH  &kp RS(NON_US_BSLH)  &kp RA(MINUS)  &kp RS(EQUAL)  &trans              &kp EQUAL  &kp RA(SQT)   &kp RA(BSLH)  &trans     &kp RA(EQUAL)        &trans
                        	                          &trans         &trans         &trans              &trans     &trans        &trans
                         >;
                 };
